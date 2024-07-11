@@ -13,7 +13,7 @@ module.exports = {
     'plugin:security/recommended-legacy',
     'prettier',
   ],
-  // ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.config.ts'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.config.ts'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
