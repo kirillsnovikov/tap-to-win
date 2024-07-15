@@ -1,0 +1,17 @@
+.root-bg {
+  width: 1em;
+  height: 1em;
+
+  font-size: 1.2em;
+  color: blue;
+
+  background-color: #978989;
+
+  &.stil {
+    color: red;
+  }
+
+  &__nested {
+    color: navajowhite;
+  }
+}
