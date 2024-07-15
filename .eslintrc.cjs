@@ -13,7 +13,7 @@ module.exports = {
     'plugin:security/recommended-legacy',
     'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.config.ts'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.config.ts', '**/*.config.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -24,5 +24,21 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    'react/function-component-definition': 0,
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'always',
+        pathGroups: [
+          {
+            pattern: '@*/**',
+            group: 'internal',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['type'],
+        groups: [['builtin', 'external'], 'internal', 'parent', 'type', ['sibling', 'index']],
+      },
+    ],
+    'import/prefer-default-export': 0,
   },
 };
