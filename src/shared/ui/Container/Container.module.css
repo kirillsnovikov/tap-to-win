@@ -1,0 +1,15 @@
+.container {
+  --size-width-container: 1320px;
+  --size-padding-container: var(--s20);
+
+  width: min(100%, var(--size-width-container));
+  padding-inline: var(--size-padding-container);
+
+  @media screen and (width >= 768px) {
+    --size-padding-container: var(--s48);
+  }
+
+  @media screen and (width >= 1440px) {
+    --size-padding-container: var(--s0);
+  }
+}

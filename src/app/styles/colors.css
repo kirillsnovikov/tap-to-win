@@ -1,0 +1,85 @@
+:root {
+  /* primary */
+  --color-primary-100: var(--color-apple-100);
+  --color-primary-400: var(--color-apple-400);
+  --color-primary-500: var(--color-apple-500);
+  --color-primary-700: var(--color-apple-700);
+  --color-primary-800: var(--color-apple-800);
+  --color-primary-900: var(--color-apple-900);
+
+  /* secondary */
+  --color-secondary-100: var(--color-azure-100);
+  --color-secondary-500: var(--color-azure-500);
+  --color-secondary-700: var(--color-azure-700);
+  --color-secondary-800: var(--color-azure-800);
+  --color-secondary-900: var(--color-azure-900);
+
+  /* neutral */
+  --color-neutral-100: var(--color-gray-100);
+  --color-neutral-200: var(--color-gray-200);
+  --color-neutral-300: var(--color-gray-300);
+  --color-neutral-400: var(--color-gray-400);
+  --color-neutral-500: var(--color-gray-500);
+  --color-neutral-600: var(--color-gray-600);
+  --color-neutral-700: var(--color-gray-700);
+  --color-neutral-800: var(--color-gray-800);
+  --color-neutral-900: var(--color-gray-900);
+
+  /* ======================================= */
+
+  /*  Static colors   */
+
+  /* primary scheme */
+  --color-primary-lightest: var(--color-primary-100);
+  --color-primary-lighten-s: var(--color-primary-400);
+  --color-primary: var(--color-primary-500);
+  --color-primary-darken-m: var(--color-primary-700);
+  --color-primary-darken-l: var(--color-primary-800);
+  --color-primary-darkest: var(--color-primary-900);
+
+  /* secondary scheme */
+  --color-secondary-lightest: var(--color-secondary-100);
+  --color-secondary: var(--color-secondary-500);
+  --color-secondary-darken-m: var(--color-secondary-700);
+  --color-secondary-darken-l: var(--color-secondary-800);
+  --color-secondary-darkest: var(--color-secondary-900);
+
+  /* base */
+  --color-white: 0deg 0% 100%;
+  --color-black: 0deg 0% 0%;
+
+  /* status colors */
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-chartreuse-500);
+  --color-warning: var(--color-khaki-500);
+  --color-info: var(--color-turquoise-500);
+
+  /* neutral colors scheme */
+  --color-neutral-white: var(--color-white);
+  --color-neutral-lightest: var(--color-neutral-100);
+  --color-neutral-lighten-l: var(--color-neutral-200);
+  --color-neutral-lighten-m: var(--color-neutral-300);
+  --color-neutral-lighten-s: var(--color-neutral-400);
+  --color-neutral-default: var(--color-neutral-500);
+  --color-neutral-darken-s: var(--color-neutral-600);
+  --color-neutral-darken-m: var(--color-neutral-700);
+  --color-neutral-darken-l: var(--color-neutral-800);
+  --color-neutral-darkest: var(--color-neutral-900);
+  --color-neutral-black: var(--color-black);
+
+  /* background */
+  --color-background: var(--color-neutral-darkest);
+
+  /* elements colors scheme */
+  --color-elements-lighten-m: var(--color-cobalt-300);
+  --color-elements-lighten-s: var(--color-cobalt-400);
+  --color-elements-default: var(--color-cobalt-500);
+  --color-elements-darken-s: var(--color-cobalt-600);
+  --color-elements-darken-m: var(--color-cobalt-700);
+
+  /* spicial colors */
+  --color-carmine-default: var(--color-carmine-500);
+  --color-blonde-lighten-m: var(--color-blonde-300);
+  --color-blonde-lighten-s: var(--color-blonde-400);
+  --color-blonde-default: var(--color-blonde-500);
+}

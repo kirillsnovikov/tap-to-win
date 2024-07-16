@@ -1,0 +1,52 @@
+:root {
+  --size-skew-elements: skewX(-38deg);
+  --size-blur-backdrop: blur(14px);
+  --color-bg-backdrop: hsla(var(--color-background) / 50%);
+  --shadow-popup: 5px 5px 20px 0px hsla(var(--color-primary) / 25%);
+  --outline-focus-visible: var(--s4) solid hsla(var(--color-primary) / 40%);
+  --outline-offset-focus-visible: var(--s2);
+  --transition-duration: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scrollbar-gutter: stable;
+
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 1fr auto;
+
+  min-height: 100vh;
+
+  color: hsl(var(--color-neutral-white));
+
+  background: hsl(var(--color-background));
+}
+
+.focus-visible {
+  outline: var(--outline-focus-visible);
+  outline-offset: var(--outline-offset-focus-visible);
+}
+
+button,
+a,
+summary,
+[role='button'],
+[data-tooltip-id],
+[tabindex] {
+  &:focus-visible {
+    outline: var(--outline-focus-visible);
+    outline-offset: var(--outline-offset-focus-visible);
+  }
+}
+
+input,
+textarea {
+  &:focus-visible {
+    outline: none;
+  }
+}
