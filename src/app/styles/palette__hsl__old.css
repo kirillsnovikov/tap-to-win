@@ -1,0 +1,66 @@
+:root {
+  /* apple */
+  --color-apple-h: 80deg;
+  --color-apple-100: var(--color-apple-h) 81% 98%;
+  --color-apple-400: var(--color-apple-h) 81% 75%;
+  --color-apple-500: var(--color-apple-h) 81% 65%;
+  --color-apple-700: var(--color-apple-h) 81% 50%;
+  --color-apple-800: var(--color-apple-h) 81% 40%;
+  --color-apple-900: var(--color-apple-h) 81% 15%;
+
+  /* azure */
+  --color-azure-h: 206deg;
+  --color-azure-100: var(--color-azure-h) 94% 98%;
+  --color-azure-500: var(--color-azure-h) 94% 56%;
+  --color-azure-700: var(--color-azure-h) 94% 50%;
+  --color-azure-800: var(--color-azure-h) 94% 40%;
+  --color-azure-900: var(--color-azure-h) 94% 15%;
+
+  /* cobalt */
+  --color-cobalt-h: 231deg;
+  --color-cobalt-300: var(--color-cobalt-h) 16% 27%;
+  --color-cobalt-400: var(--color-cobalt-h) 16% 17%;
+  --color-cobalt-500: var(--color-cobalt-h) 17% 16%;
+  --color-cobalt-600: var(--color-cobalt-h) 16% 12%;
+  --color-cobalt-700: var(--color-cobalt-h) 16% 10%;
+
+  /* carmine */
+  --color-carmine-h: 343deg;
+  --color-carmine-500: var(--color-carmine-h) 99% 55%;
+
+  /* red */
+  --color-red-h: 0deg;
+  --color-red-100: var(--color-red-h) 100% 97%;
+  --color-red-500: var(--color-red-h) 100% 51%;
+  --color-red-800: var(--color-red-h) 72% 51%;
+
+  /* chartreuse */
+  --color-chartreuse-h: 145deg;
+  --color-chartreuse-500: var(--color-chartreuse-h) 94% 49%;
+
+  /* gray */
+  --color-gray-h: 0deg;
+  --color-gray-100: var(--color-gray-h) 0% 97%;
+  --color-gray-200: var(--color-gray-h) 0% 89%;
+  --color-gray-300: var(--color-gray-h) 0% 81%;
+  --color-gray-400: var(--color-gray-h) 0% 71%;
+  --color-gray-500: var(--color-gray-h) 0% 55%;
+  --color-gray-600: var(--color-gray-h) 0% 46%;
+  --color-gray-700: var(--color-gray-h) 0% 29%;
+  --color-gray-800: var(--color-gray-h) 0% 21%;
+  --color-gray-900: var(--color-gray-h) 0% 9%;
+
+  /* khaki */
+  --color-khaki-h: 46deg;
+  --color-khaki-500: var(--color-khaki-h) 87% 67%;
+
+  /* turquoise */
+  --color-turquoise-h: 184deg;
+  --color-turquoise-500: var(--color-turquoise-h) 100% 61%;
+
+  /* blonde */
+  --color-blonde-h: 55deg;
+  --color-blonde-300: var(--color-blonde-h) 7% 82%;
+  --color-blonde-400: var(--color-blonde-h) 6% 72%;
+  --color-blonde-500: var(--color-blonde-h) 15% 69%;
+}

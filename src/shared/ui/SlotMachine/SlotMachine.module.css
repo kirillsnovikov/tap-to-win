@@ -1,0 +1,6 @@
+.slot-machine {
+  aspect-ratio: 57 / 51;
+  width: 300px;
+  background-image: url('@public/slot-machine/skin.webp');
+  background-size: contain;
+}

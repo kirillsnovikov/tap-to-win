@@ -1,9 +1,9 @@
 :root {
   --size-skew-elements: skewX(-38deg);
   --size-blur-backdrop: blur(14px);
-  --color-bg-backdrop: hsla(var(--color-background) / 50%);
-  --shadow-popup: 5px 5px 20px 0px hsla(var(--color-primary) / 25%);
-  --outline-focus-visible: var(--s4) solid hsla(var(--color-primary) / 40%);
+  --color-bg-backdrop: var(--color-background) / 50%;
+  --shadow-popup: 5px 5px 20px 0px var(--color-primary) / 25%;
+  --outline-focus-visible: var(--s4) solid var(--color-primary) / 40%;
   --outline-offset-focus-visible: var(--s2);
   --transition-duration: 0.3s;
 }
@@ -22,9 +22,9 @@ body {
 
   min-height: 100vh;
 
-  color: hsl(var(--color-neutral-white));
+  color: var(--color-neutral-white);
 
-  background: hsl(var(--color-background));
+  background: var(--color-background);
 }
 
 .focus-visible {

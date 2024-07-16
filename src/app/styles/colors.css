@@ -1,11 +1,11 @@
 :root {
   /* primary */
-  --color-primary-100: var(--color-apple-100);
-  --color-primary-400: var(--color-apple-400);
-  --color-primary-500: var(--color-apple-500);
-  --color-primary-700: var(--color-apple-700);
-  --color-primary-800: var(--color-apple-800);
-  --color-primary-900: var(--color-apple-900);
+  --color-primary-100: var(--color-violet-100);
+  --color-primary-400: var(--color-violet-400);
+  --color-primary-500: var(--color-violet-500);
+  --color-primary-700: var(--color-violet-700);
+  --color-primary-800: var(--color-violet-800);
+  --color-primary-900: var(--color-violet-900);
 
   /* secondary */
   --color-secondary-100: var(--color-azure-100);
@@ -45,8 +45,8 @@
   --color-secondary-darkest: var(--color-secondary-900);
 
   /* base */
-  --color-white: 0deg 0% 100%;
-  --color-black: 0deg 0% 0%;
+  --color-white: #fff;
+  --color-black: #000;
 
   /* status colors */
   --color-error: var(--color-red-500);
@@ -68,7 +68,7 @@
   --color-neutral-black: var(--color-black);
 
   /* background */
-  --color-background: var(--color-neutral-darkest);
+  --color-background: var(--color-primary);
 
   /* elements colors scheme */
   --color-elements-lighten-m: var(--color-cobalt-300);
