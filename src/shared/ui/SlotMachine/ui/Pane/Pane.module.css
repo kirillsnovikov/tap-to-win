@@ -1,0 +1,15 @@
+.pane {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  padding: var(--s8);
+
+  background-color: var(--color-blonde);
+}
+
+.pane-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

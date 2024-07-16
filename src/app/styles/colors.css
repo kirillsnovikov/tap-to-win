@@ -78,8 +78,6 @@
   --color-elements-darken-m: var(--color-cobalt-700);
 
   /* spicial colors */
-  --color-carmine-default: var(--color-carmine-500);
-  --color-blonde-lighten-m: var(--color-blonde-300);
-  --color-blonde-lighten-s: var(--color-blonde-400);
-  --color-blonde-default: var(--color-blonde-500);
+  --color-carmine: var(--color-carmine-500);
+  --color-blonde: var(--color-blonde-300);
 }

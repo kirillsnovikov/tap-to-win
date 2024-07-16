@@ -1,6 +1,14 @@
 .slot-machine {
+  position: relative;
   aspect-ratio: 57 / 51;
   width: 300px;
-  background-image: url('@public/slot-machine/skin.webp');
-  background-size: contain;
+}
+
+.status-bar {
+  position: absolute;
+  right: var(--s0);
+  bottom: var(--s24);
+  left: var(--s0);
+
+  padding-inline: var(--s32) var(--s60);
 }

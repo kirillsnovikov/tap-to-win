@@ -33,6 +33,15 @@ module.exports = {
       },
     ],
     'react/prop-types': 0,
+    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/restrict-template-expressions': [
+      'error',
+      {
+        allowNumber: true,
+      },
+    ],
+    '@typescript-eslint/no-unnecessary-template-expression': 0,
+    'import/prefer-default-export': 0,
     'import/order': [
       'error',
       {
@@ -47,13 +56,5 @@ module.exports = {
         groups: [['builtin', 'external'], 'internal', 'parent', 'type', ['sibling', 'index']],
       },
     ],
-    'import/prefer-default-export': 0,
-    '@typescript-eslint/restrict-template-expressions': [
-      'error',
-      {
-        allowNumber: true,
-      },
-    ],
-    '@typescript-eslint/no-unnecessary-template-expression': 0,
   },
 };

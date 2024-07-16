@@ -1,16 +1,15 @@
-import { PolymorphicComponentPropsWithRef, PolymorphicRef } from '@src/shared/types/polymorphic';
-
+import type { PolymorphicComponentPropsWithRef, PolymorphicRef } from '@src/shared/types/polymorphic';
 import type { CrossAxisAlignment, FlexFlow, MainAxisAlignment, gapSizes } from './constants';
 
-type FlexFlows = `${FlexFlow}`;
-type MainAxisAlignments = `${MainAxisAlignment}`;
-type CrossAxisAlignments = `${CrossAxisAlignment}`;
+type Flow = `${FlexFlow}`;
+type MainAxis = `${MainAxisAlignment}`;
+type CrossAxis = `${CrossAxisAlignment}`;
 type GapSize = (typeof gapSizes)[number];
 
 interface BaseFlexProps {
-  flow?: FlexFlows;
-  mainAxis?: MainAxisAlignments;
-  crossAxis?: CrossAxisAlignments;
+  flow?: Flow;
+  mainAxis?: MainAxis;
+  crossAxis?: CrossAxis;
   rowGap?: GapSize;
   columnGap?: GapSize;
   gap?: GapSize;

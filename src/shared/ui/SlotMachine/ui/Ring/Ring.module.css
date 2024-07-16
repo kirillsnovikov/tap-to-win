@@ -1,0 +1,18 @@
+.ring {
+  transform-style: preserve-3d;
+
+  animation-name: ring-rotation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ring-rotation {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}

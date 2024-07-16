@@ -2,8 +2,8 @@ import React from 'react';
 import { clsx } from 'clsx';
 
 import { capitalize } from '@src/shared/lib/capitalize';
-import { PolymorphicRef } from '@src/shared/types/polymorphic';
 
+import type { PolymorphicRef } from '@src/shared/types/polymorphic';
 import type { FlexComponent, FlexProps } from './types';
 
 import styles from './Flex.module.css';
