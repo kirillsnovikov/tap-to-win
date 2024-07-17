@@ -1,0 +1,19 @@
+.typography {
+  font-family: var(--font-family-default);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.regular {
+  font-weight: var(--font-weight-regular);
+}

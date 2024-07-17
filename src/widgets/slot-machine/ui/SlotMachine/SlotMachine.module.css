@@ -7,8 +7,8 @@
 .status-bar {
   position: absolute;
   right: var(--s0);
-  bottom: var(--s24);
+  bottom: var(--s20);
   left: var(--s0);
 
-  padding-inline: var(--s32) var(--s60);
+  padding-inline: var(--s40) var(--s68);
 }

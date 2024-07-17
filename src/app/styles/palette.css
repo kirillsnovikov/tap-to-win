@@ -8,4 +8,21 @@
 
   /* blonde */
   --color-blonde-300: #f9f6e9;
+
+  /* red */
+  --color-red-500: #ff3000;
+
+  /* chartreuse */
+  --color-chartreuse-500: #07f269;
+
+  /* gray */
+  --color-gray-100: #f7f7f7;
+  --color-gray-200: #e3e3e3;
+  --color-gray-300: #cfcfcf;
+  --color-gray-400: #b5b5b5;
+  --color-gray-500: #8c8c8c;
+  --color-gray-600: #757575;
+  --color-gray-700: #4a4a4a;
+  --color-gray-800: #363636;
+  --color-gray-900: #171717;
 }
