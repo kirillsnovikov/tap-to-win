@@ -1,4 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig } from 'vite';
+
 import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
@@ -13,6 +15,7 @@ export default defineConfig({
     alias: {
       '@src': '/src',
       '@shared': '/src/shared',
+      '@app': '/src/app',
       '@public': '',
     },
   },

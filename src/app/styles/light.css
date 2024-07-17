@@ -1,0 +1,24 @@
+:root {
+  /* neutral colors scheme */
+  --color-neutral-white: var(--color-white);
+  --color-neutral-lightest: var(--color-neutral-100);
+  --color-neutral-lighten-l: var(--color-neutral-200);
+  --color-neutral-lighten-m: var(--color-neutral-300);
+  --color-neutral-lighten-s: var(--color-neutral-400);
+  --color-neutral-default: var(--color-neutral-500);
+  --color-neutral-darken-s: var(--color-neutral-600);
+  --color-neutral-darken-m: var(--color-neutral-700);
+  --color-neutral-darken-l: var(--color-neutral-800);
+  --color-neutral-darkest: var(--color-neutral-900);
+  --color-neutral-black: var(--color-black);
+
+  /* background */
+  --color-background: var(--color-neutral-lightest);
+
+  /* text colors */
+
+  /* --color-text-primary: var(--color-neutral-darken-l);
+  --color-text-secondary: var(--color-neutral-darken-s);
+  --color-text-gray: var(--color-neutral-lighten-s);
+  --color-text-light-gray: var(--color-neutral-lighten-l); */
+}

@@ -13,7 +13,7 @@ module.exports = {
     'plugin:security/recommended-legacy',
     'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.config.ts', '**/*.config.cjs'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', '**/*.config.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
@@ -23,8 +23,25 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    'react/jsx-props-no-spreading': 0,
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/function-component-definition': 0,
+    'react/require-default-props': [
+      2,
+      {
+        ignoreFunctionalComponents: true,
+      },
+    ],
+    'react/prop-types': 0,
+    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/restrict-template-expressions': [
+      'error',
+      {
+        allowNumber: true,
+      },
+    ],
+    '@typescript-eslint/no-unnecessary-template-expression': 0,
+    'import/prefer-default-export': 0,
     'import/order': [
       'error',
       {
@@ -39,6 +56,5 @@ module.exports = {
         groups: [['builtin', 'external'], 'internal', 'parent', 'type', ['sibling', 'index']],
       },
     ],
-    'import/prefer-default-export': 0,
   },
 };
