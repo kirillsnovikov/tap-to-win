@@ -1,0 +1,15 @@
+.button {
+  touch-action: manipulation;
+  cursor: pointer;
+
+  padding: 0;
+
+  text-decoration: none;
+
+  appearance: none;
+  border: 0;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

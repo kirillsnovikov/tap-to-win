@@ -21,4 +21,5 @@ type EmptyObject = {
 };
 
 type AsyncFn = (...args: unknown[]) => Promise<unknown>;
+type Fn = (...args: unknown[]) => unknown;
 type NoOp = () => void;

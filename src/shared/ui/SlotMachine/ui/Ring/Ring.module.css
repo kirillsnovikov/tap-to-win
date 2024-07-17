@@ -1,8 +1,0 @@
-.ring {
-  transform-style: preserve-3d;
-  transform: rotateX(var(--test-var));
-
-  transition-timing-function: ease-in-out;
-  transition-duration: 3s;
-  transition-property: all;
-}

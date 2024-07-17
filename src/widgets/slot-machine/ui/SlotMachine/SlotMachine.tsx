@@ -1,17 +1,22 @@
-import { useState } from 'react';
+import { SpinTapOverlay } from '@src/features/spin/ui/SpinTapOverlay';
 
-import { SlotMachine as SlotMachineUi } from '@src/shared/ui/SlotMachine';
+import { Flex } from '../../../../shared/ui/Flex';
+import { Attempts } from '../Attempts';
+import { Skin } from '../Skin';
+import { Reels } from '../Reels';
+import { SpinCost } from '../SpinCost';
 
-import { getRandomPositions } from '../../lib/getRandomPositions';
+import styles from './SlotMachine.module.css';
 
-export const SlotMachine = () => {
-  const [positions, setPositions] = useState(() => getRandomPositions());
-  const [attemptsLeft, setAttemptsLeft] = useState(20);
-
-  const startHandler = () => {
-    setPositions(getRandomPositions());
-    setAttemptsLeft((prev) => prev - 1);
-  };
-
-  return <SlotMachineUi positions={positions} attemptsLeft={attemptsLeft} onStart={startHandler} />;
-};
+export const SlotMachine = () => (
+  <SpinTapOverlay>
+    <div className={styles.slotMachine}>
+      <Reels />
+      <Skin />
+      <Flex mainAxis="spaceBetween" crossAxis="center" className={styles.statusBar}>
+        <Attempts />
+        <SpinCost />
+      </Flex>
+    </div>
+  </SpinTapOverlay>
+);
