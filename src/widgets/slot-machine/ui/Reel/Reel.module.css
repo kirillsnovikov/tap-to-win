@@ -1,6 +1,5 @@
 .reel {
   transform-style: preserve-3d;
   transition-timing-function: ease-in-out;
-  transition-duration: 2700ms;
-  transition-property: all;
+  transition-property: transform;
 }
