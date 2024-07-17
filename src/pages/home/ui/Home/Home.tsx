@@ -1,3 +1,3 @@
-import { SlotMachine } from '@src/shared/ui/SlotMachine';
+import { SlotMachine } from '@src/widgets/slot-machine';
 
-export const Home = () => <SlotMachine attemptsLeft={20} />;
+export const Home = () => <SlotMachine />;
