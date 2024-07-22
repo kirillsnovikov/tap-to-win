@@ -1,0 +1,112 @@
+.typography {
+  /* display */
+  --size-text-d-xl: var(--sr96);
+  --size-text-d-l: var(--sr90);
+  --size-text-d-m: var(--sr64);
+  --size-text-d-s: var(--sr48);
+  --size-text-d-xs: var(--sr42);
+  --size-text-d-xxs: var(--sr32);
+
+  /* text */
+  --size-text-t-l: var(--sr20);
+  --size-text-t-m: var(--sr16);
+  --size-text-t-s: var(--sr14);
+  --size-text-t-xs: var(--sr12);
+
+  /* base text colors */
+  --color-text-text-primary: var(--color-neutral-white);
+  --color-text-text-secondary: var(--color-neutral-lighten-s);
+
+  /* special text colors */
+  --color-text-primary: var(--color-primary);
+  --color-text-gray: var(--color-neutral-darken-s);
+  --color-text-light-gray: var(--color-neutral-darken-l);
+  --color-text-error: var(--color-error);
+  --color-text-success: var(--color-success);
+  --color-text-black: var(--color-neutral-black);
+
+  line-height: normal;
+  text-decoration: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.primary {
+  color: var(--color-text-primary);
+}
+
+.text-primary {
+  color: var(--color-text-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-text-secondary);
+}
+
+.gray {
+  color: var(--color-text-gray);
+}
+
+.light-gray {
+  color: var(--color-text-light-gray);
+}
+
+.error {
+  color: var(--color-text-error);
+}
+
+.success {
+  color: var(--color-text-success);
+}
+
+.black {
+  color: var(--color-text-black);
+}
+
+.display-xxs {
+  font-size: var(--size-text-d-xxs);
+}
+
+.display-xs {
+  font-size: var(--size-text-d-xs);
+}
+
+.display-s {
+  font-size: var(--size-text-d-s);
+}
+
+.display-m {
+  font-size: var(--size-text-d-m);
+}
+
+.display-l {
+  font-size: var(--size-text-d-l);
+}
+
+.display-xl {
+  font-size: var(--size-text-d-xl);
+}
+
+.text-l {
+  font-size: var(--size-text-t-l);
+}
+
+.text-m {
+  font-size: var(--size-text-t-m);
+}
+
+.text-s {
+  font-size: var(--size-text-t-s);
+}
+
+.text-xs {
+  font-size: var(--size-text-t-xs);
+}
