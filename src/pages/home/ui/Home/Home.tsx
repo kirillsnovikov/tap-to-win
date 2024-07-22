@@ -1,14 +1,10 @@
-// import { useSessionStore } from '@src/entities/session/model';
+import { TotalCoins } from '@src/entities/session/ui/TotalCoins/TotalCoins';
 import { Flex } from '@src/shared/ui/Flex';
-// import { Typography } from '@src/shared/ui/Typography';
 import { SlotMachine } from '@src/widgets/slot-machine';
 
 export const Home = () => (
-  // const { player } = useSessionStore();
-  <Flex center flow="column">
-    {/* <Typography variant="displayXs" color="success">
-        {player?.coins}
-      </Typography> */}
+  <Flex center flow="column" rowGap={28}>
+    <TotalCoins />
     <SlotMachine />
   </Flex>
 );
