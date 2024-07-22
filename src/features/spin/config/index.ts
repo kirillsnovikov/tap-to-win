@@ -1,1 +1,1 @@
-export const spinDelay = 2500;
+export const spinDelay = 2000;
