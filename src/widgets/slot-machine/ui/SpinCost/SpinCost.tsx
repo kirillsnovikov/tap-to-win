@@ -9,7 +9,7 @@ export const SpinCost = () => {
 
   return (
     <Flex crossAxis="center" as="span" columnGap={4}>
-      <ImageIcon src="/images/icons/horseshoe.png" alt="icon of SpinCost" />
+      <ImageIcon src="/images/icons/horseshoe-coin.png" alt="icon of SpinCost" />
       <Typography as="span" color="black" weight="bold" variant="textL">
         {label}
       </Typography>

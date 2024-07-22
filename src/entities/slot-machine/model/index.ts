@@ -5,9 +5,9 @@ import { getRandomCombination } from '../lib/getRandomConbination';
 
 import type { slotMachineSymbols } from '../config';
 
-export type SlotMachineSymbol = (typeof slotMachineSymbols)[number];
+export type SlotMachineSymbolName = (typeof slotMachineSymbols)[number];
 
-export type CombinationTuple = [SlotMachineSymbol, SlotMachineSymbol, SlotMachineSymbol];
+export type CombinationTuple = [SlotMachineSymbolName, SlotMachineSymbolName, SlotMachineSymbolName];
 
 const initialCombination = getRandomCombination();
 

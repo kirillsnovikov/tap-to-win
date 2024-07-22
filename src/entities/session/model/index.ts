@@ -2,11 +2,13 @@ import { create, useStore } from 'zustand';
 
 import { isNonNullable } from '@src/shared/lib/isNonNullable';
 
+type Coins = number;
+
 export interface Player {
   name: string;
   login: string;
   email: string;
-  coins: number;
+  coins: Coins;
   picture: string;
   topWin: number;
 }

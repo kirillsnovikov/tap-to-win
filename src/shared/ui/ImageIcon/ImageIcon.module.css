@@ -18,3 +18,8 @@
   width: var(--s32);
   height: var(--s32);
 }
+
+.size-xl {
+  width: var(--s44);
+  height: var(--s44);
+}

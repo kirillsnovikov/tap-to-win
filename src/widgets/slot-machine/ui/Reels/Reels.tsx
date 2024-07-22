@@ -6,12 +6,12 @@ import { slotMachineSymbols } from '@src/entities/slot-machine/config';
 import { symbolAngle } from '../../config';
 import { Reel } from '../Reel';
 
-import type { SlotMachineSymbol } from '@src/entities/slot-machine/model';
+import type { SlotMachineSymbolName } from '@src/entities/slot-machine/model';
 
 import styles from './Reels.module.css';
 
-const getRotateX = (symbol: SlotMachineSymbol) => {
-  const symbolIdx = slotMachineSymbols.indexOf(symbol);
+const getRotateX = (symbolName: SlotMachineSymbolName) => {
+  const symbolIdx = slotMachineSymbols.indexOf(symbolName);
   return symbolIdx * symbolAngle;
 };
 
@@ -22,7 +22,7 @@ export const Reels = () => {
       combination.map((symbol, i): React.CSSProperties => {
         const rotateX = attemptsTotal * 4 * 360 + getRotateX(symbol);
 
-        const transitionDelay = i * 200;
+        const transitionDelay = i * 300;
         return {
           transform: `rotateX(-${rotateX}deg)`,
           transitionDelay: `${transitionDelay}ms`,
