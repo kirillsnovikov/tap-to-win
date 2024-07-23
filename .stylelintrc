@@ -3,6 +3,7 @@
   "plugins": ["stylelint-prettier"],
   "rules": {
     "prettier/prettier": true,
-    "declaration-no-important": true
+    "declaration-no-important": true,
+    "property-no-vendor-prefix": [true, { "ignoreProperties": ["backface-visibility"] }]
   }
 }

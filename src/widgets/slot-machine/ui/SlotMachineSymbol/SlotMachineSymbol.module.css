@@ -5,6 +5,8 @@
   height: 100%;
   padding: var(--s8);
 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background-color: var(--color-blonde);
 }
 
