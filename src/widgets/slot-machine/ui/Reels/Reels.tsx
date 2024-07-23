@@ -19,13 +19,13 @@ export const Reels = () => {
   const { attemptsTotal, combination } = useSlotMachineStore();
   const [first, second, third] = useMemo(
     () =>
-      combination.map((symbol, i): React.CSSProperties => {
+      combination.map((symbol): React.CSSProperties => {
         const rotateX = attemptsTotal * 4 * 360 + getRotateX(symbol);
 
-        const transitionDelay = i * 300;
+        // const transitionDelay = i * 300;
         return {
           transform: `rotateX(-${rotateX}deg)`,
-          transitionDelay: `${transitionDelay}ms`,
+          // transitionDelay: `${transitionDelay}ms`,
         };
       }),
     [combination, attemptsTotal],
@@ -33,9 +33,9 @@ export const Reels = () => {
 
   return (
     <div className={styles.reels}>
-      <Reel style={{ ...first, transitionDuration: `${1400}ms` }} />
-      <Reel style={{ ...second, transitionDuration: `${1200}ms` }} />
-      <Reel style={{ ...third, transitionDuration: `${1400}ms` }} />
+      <Reel style={{ ...first }} />
+      <Reel style={{ ...second }} />
+      <Reel style={{ ...third }} />
     </div>
   );
 };

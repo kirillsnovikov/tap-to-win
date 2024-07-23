@@ -1,0 +1,1 @@
+export { TotalCoins } from './TotalCoins';
