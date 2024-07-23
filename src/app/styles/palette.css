@@ -1,10 +1,14 @@
 :root {
   /* violet */
+  --color-violet-100: #b7a9ff;
   --color-violet-200: #7264f4;
-  --color-violet-300: #1f3469;
-  --color-violet-400: #282874;
-  --color-violet-500: #271e56;
-  --color-violet-800: #281c48;
+  --color-violet-300: #6041ff;
+  --color-violet-400: #443d87;
+  --color-violet-500: #282874;
+  --color-violet-600: #311d82;
+  --color-violet-700: #20356a;
+  --color-violet-800: #271e56;
+  --color-violet-900: #291d49;
 
   /* blonde */
   --color-blonde-300: #f9f6e9;

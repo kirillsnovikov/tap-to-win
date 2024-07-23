@@ -1,0 +1,6 @@
+.top-win {
+  flex: 1;
+  padding: var(--s8) var(--s12);
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius-m);
+}

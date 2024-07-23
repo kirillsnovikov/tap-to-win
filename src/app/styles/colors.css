@@ -1,10 +1,14 @@
 :root {
   /* primary */
+  --color-primary-100: var(--color-violet-100);
   --color-primary-200: var(--color-violet-200);
   --color-primary-300: var(--color-violet-300);
   --color-primary-400: var(--color-violet-400);
   --color-primary-500: var(--color-violet-500);
+  --color-primary-600: var(--color-violet-600);
+  --color-primary-700: var(--color-violet-700);
   --color-primary-800: var(--color-violet-800);
+  --color-primary-900: var(--color-violet-900);
 
   /* neutral */
   --color-neutral-100: var(--color-gray-100);
@@ -22,11 +26,15 @@
   /*  Static colors   */
 
   /* primary scheme */
-  --color-primary-lightest: var(--color-primary-200);
+  --color-primary-lightest: var(--color-primary-100);
+  --color-primary-lighten-l: var(--color-primary-200);
   --color-primary-lighten-m: var(--color-primary-300);
   --color-primary-lighten-s: var(--color-primary-400);
   --color-primary: var(--color-primary-500);
-  --color-primary-darken-m: var(--color-primary-800);
+  --color-primary-darken-s: var(--color-primary-600);
+  --color-primary-darken-m: var(--color-primary-700);
+  --color-primary-darken-l: var(--color-primary-800);
+  --color-primary-darkest: var(--color-primary-900);
 
   /* base */
   --color-white: #fff;
@@ -50,7 +58,8 @@
   --color-neutral-black: var(--color-black);
 
   /* background */
-  --color-background: var(--color-primary);
+
+  --color-background: var(--color-primary-darken-l);
 
   /* spicial colors */
   --color-blonde: var(--color-blonde-300);

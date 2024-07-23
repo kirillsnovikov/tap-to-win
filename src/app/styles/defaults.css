@@ -1,12 +1,24 @@
 :root {
-  --size-skew-elements: skewX(-38deg);
-  --size-blur-backdrop: blur(14px);
-  --color-bg-backdrop: var(--color-background) / 50%;
   --shadow-popup: 5px 5px 20px 0px var(--color-primary) / 25%;
-  --outline-focus-visible: var(--s4) solid var(--color-primary) / 40%;
+  --gradient-background-elements: linear-gradient(
+    98.43deg,
+    var(--color-primary-lighten-m) 37.56%,
+    var(--color-primary-lightest) 103.4%
+  );
+  --gradient-border-elements: linear-gradient(
+    180deg,
+    var(--color-primary-lighten-s) 0%,
+    var(--color-primary-lighten-l) 100%
+  );
+  --outline-focus-visible: var(--s4) solid var(--color-primary);
   --outline-offset-focus-visible: var(--s2);
   --transition-duration: 0.3s;
   --font-family-default: 'SF UI Display', sans-serif;
+
+  /* border radius */
+  --border-radius-s: var(--s8);
+  --border-radius-m: var(--s16);
+  --border-radius-l: var(--s20);
 }
 
 html {

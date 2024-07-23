@@ -2,15 +2,17 @@ import { Typography } from '@src/shared/ui/Typography';
 import { Flex } from '@src/shared/ui/Flex';
 import { ImageIcon } from '@src/shared/ui/ImageIcon';
 
-import { withSession, type WithSessionBaseProps } from '../withSession';
+import type { Coins } from '@src/entities/session/model';
 
-const TotalCoinsComponent = ({ player }: WithSessionBaseProps) => (
-  <Flex gap={8} crossAxis="center">
+interface Props {
+  coins: Coins;
+}
+
+export const TotalCoins: React.FC<Props> = ({ coins }) => (
+  <Flex gap={8} crossAxis="center" mainAxis="center">
     <ImageIcon src="/images/icons/horseshoe-coin.png" alt="total coins" size="xl" />
     <Typography variant="displayXxs" weight="bold">
-      {player.coins}
+      {coins}
     </Typography>
   </Flex>
 );
-
-export const TotalCoins = withSession(TotalCoinsComponent);

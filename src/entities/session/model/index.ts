@@ -2,7 +2,8 @@ import { create, useStore } from 'zustand';
 
 import { isNonNullable } from '@src/shared/lib/isNonNullable';
 
-type Coins = number;
+export type Coins = number;
+export type Win = number;
 
 export interface Player {
   name: string;
@@ -10,15 +11,15 @@ export interface Player {
   email: string;
   coins: Coins;
   picture: string;
-  topWin: number;
+  topWin: Win;
 }
 
 const initialPlayer: Player = {
-  coins: 1494000,
+  coins: 0,
   email: 'etto@lsdk.eu',
   login: 'RoORUjj@L',
   name: 'VIeud LLdip',
-  picture: '',
+  picture: 'https://avatars.mds.yandex.net/i?id=8fe6b90aab41119b8969bda6d0d41c00_sr-7545493-images-thumbs&n=13',
   topWin: 100000,
 };
 

@@ -1,0 +1,1 @@
+export { PlayerBio } from './PlayerBio';

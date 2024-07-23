@@ -4,6 +4,11 @@
   object-position: center;
 }
 
+.size-xs {
+  width: var(--s12);
+  height: var(--s12);
+}
+
 .size-s {
   width: var(--s20);
   height: var(--s20);
