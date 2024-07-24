@@ -7,6 +7,8 @@ import styles from './Home.module.css';
 export const Home = () => (
   <Flex crossAxis="center" flow="column" rowGap={28} className={styles.home}>
     <PlayerInfo />
-    <SlotMachine />
+    <Flex className={styles.slotMachineWrapper} center>
+      <SlotMachine />
+    </Flex>
   </Flex>
 );

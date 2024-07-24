@@ -9,3 +9,7 @@
     display: none;
   }
 }
+
+.slot-machine-wrapper {
+  flex-grow: 1;
+}

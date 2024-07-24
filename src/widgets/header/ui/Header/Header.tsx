@@ -6,10 +6,12 @@ import Container from '@src/shared/ui/Container';
 import styles from './Header.module.css';
 
 export const Header = () => (
-  <header className={styles.header}>
+  <Flex as="header" className={styles.header} crossAxis="center">
     <Container as="div" className={styles.container}>
       <Flex mainAxis="start">
-        <Button variant="basic">Отмена</Button>
+        <Button variant="basic" size="s">
+          Отмена
+        </Button>
       </Flex>
       <Flex flow="column" crossAxis="center" mainAxis="center">
         <Typography as="h1" variant="textL" weight="medium">
@@ -19,9 +21,9 @@ export const Header = () => (
           бот
         </Typography>
       </Flex>
-      <Flex mainAxis="end" crossAxis="center">
-        <span>...</span>
-      </Flex>
+      <Typography as="span" className={styles.settings}>
+        ⋯
+      </Typography>
     </Container>
-  </header>
+  </Flex>
 );

@@ -6,7 +6,7 @@
   --size-button-l: var(--sr60);
   --size-padding-button-fill: var(--s0) var(--s40);
   --size-padding-button-outline: var(--s0) calc(var(--s40) - 1px);
-  --size-padding-button-basic: var(--s0) var(--s24);
+  --size-padding-button-basic: var(--s0) var(--s4);
 
   /* shared colors */
   --color-bg-button-primary: var(--color-primary-lightest);

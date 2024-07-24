@@ -10,7 +10,7 @@ interface Props {
 export const RootLayout: React.FC<Props> = ({ children }) => (
   <>
     <Header />
-    <Container as="main" className={styles.root}>
+    <Container as="main" className={styles.container}>
       {children}
     </Container>
   </>

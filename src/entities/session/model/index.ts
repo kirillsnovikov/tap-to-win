@@ -4,6 +4,7 @@ import { isNonNullable } from '@src/shared/lib/isNonNullable';
 
 export type Coins = number;
 export type Win = number;
+export type Level = number;
 
 export interface Player {
   name: string;
@@ -12,6 +13,7 @@ export interface Player {
   coins: Coins;
   picture: string;
   topWin: Win;
+  level: Level;
 }
 
 const initialPlayer: Player = {
@@ -21,6 +23,7 @@ const initialPlayer: Player = {
   name: 'VIeud LLdip',
   picture: 'https://avatars.mds.yandex.net/i?id=8fe6b90aab41119b8969bda6d0d41c00_sr-7545493-images-thumbs&n=13',
   topWin: 100000,
+  level: 6,
 };
 
 interface State {
