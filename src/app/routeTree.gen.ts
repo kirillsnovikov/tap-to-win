@@ -13,41 +13,80 @@ import { createFileRoute } from '@tanstack/react-router';
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root';
+import { Route as AppImport } from './routes/_app';
 
 // Create Virtual Routes
 
-const AboutLazyImport = createFileRoute('/about')();
-const IndexLazyImport = createFileRoute('/')();
+const AppIndexLazyImport = createFileRoute('/_app/')();
+const AppRewardLazyImport = createFileRoute('/_app/reward')();
+const AppFriendsLazyImport = createFileRoute('/_app/friends')();
+const AppEarnIndexLazyImport = createFileRoute('/_app/earn/')();
 
 // Create/Update Routes
 
-const AboutLazyRoute = AboutLazyImport.update({
-  path: '/about',
+const AppRoute = AppImport.update({
+  id: '/_app',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/about.lazy').then((d) => d.Route));
+} as any);
 
-const IndexLazyRoute = IndexLazyImport.update({
+const AppIndexLazyRoute = AppIndexLazyImport.update({
   path: '/',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route));
+  getParentRoute: () => AppRoute,
+} as any).lazy(() => import('./routes/_app/index.lazy').then((d) => d.Route));
+
+const AppRewardLazyRoute = AppRewardLazyImport.update({
+  path: '/reward',
+  getParentRoute: () => AppRoute,
+} as any).lazy(() => import('./routes/_app/reward.lazy').then((d) => d.Route));
+
+const AppFriendsLazyRoute = AppFriendsLazyImport.update({
+  path: '/friends',
+  getParentRoute: () => AppRoute,
+} as any).lazy(() => import('./routes/_app/friends.lazy').then((d) => d.Route));
+
+const AppEarnIndexLazyRoute = AppEarnIndexLazyImport.update({
+  path: '/earn/',
+  getParentRoute: () => AppRoute,
+} as any).lazy(() => import('./routes/_app/earn/index.lazy').then((d) => d.Route));
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/': {
-      id: '/';
-      path: '/';
-      fullPath: '/';
-      preLoaderRoute: typeof IndexLazyImport;
+    '/_app': {
+      id: '/_app';
+      path: '';
+      fullPath: '';
+      preLoaderRoute: typeof AppImport;
       parentRoute: typeof rootRoute;
     };
-    '/about': {
-      id: '/about';
-      path: '/about';
-      fullPath: '/about';
-      preLoaderRoute: typeof AboutLazyImport;
-      parentRoute: typeof rootRoute;
+    '/_app/friends': {
+      id: '/_app/friends';
+      path: '/friends';
+      fullPath: '/friends';
+      preLoaderRoute: typeof AppFriendsLazyImport;
+      parentRoute: typeof AppImport;
+    };
+    '/_app/reward': {
+      id: '/_app/reward';
+      path: '/reward';
+      fullPath: '/reward';
+      preLoaderRoute: typeof AppRewardLazyImport;
+      parentRoute: typeof AppImport;
+    };
+    '/_app/': {
+      id: '/_app/';
+      path: '/';
+      fullPath: '/';
+      preLoaderRoute: typeof AppIndexLazyImport;
+      parentRoute: typeof AppImport;
+    };
+    '/_app/earn/': {
+      id: '/_app/earn/';
+      path: '/earn';
+      fullPath: '/earn';
+      preLoaderRoute: typeof AppEarnIndexLazyImport;
+      parentRoute: typeof AppImport;
     };
   }
 }
@@ -55,8 +94,12 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export const routeTree = rootRoute.addChildren({
-  IndexLazyRoute,
-  AboutLazyRoute,
+  AppRoute: AppRoute.addChildren({
+    AppFriendsLazyRoute,
+    AppRewardLazyRoute,
+    AppIndexLazyRoute,
+    AppEarnIndexLazyRoute,
+  }),
 });
 
 /* prettier-ignore-end */
@@ -67,15 +110,33 @@ export const routeTree = rootRoute.addChildren({
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/",
-        "/about"
+        "/_app"
       ]
     },
-    "/": {
-      "filePath": "index.lazy.tsx"
+    "/_app": {
+      "filePath": "_app.tsx",
+      "children": [
+        "/_app/friends",
+        "/_app/reward",
+        "/_app/",
+        "/_app/earn/"
+      ]
     },
-    "/about": {
-      "filePath": "about.lazy.tsx"
+    "/_app/friends": {
+      "filePath": "_app/friends.lazy.tsx",
+      "parent": "/_app"
+    },
+    "/_app/reward": {
+      "filePath": "_app/reward.lazy.tsx",
+      "parent": "/_app"
+    },
+    "/_app/": {
+      "filePath": "_app/index.lazy.tsx",
+      "parent": "/_app"
+    },
+    "/_app/earn/": {
+      "filePath": "_app/earn/index.lazy.tsx",
+      "parent": "/_app"
     }
   }
 }

@@ -28,7 +28,7 @@ html {
 body {
   scrollbar-gutter: stable;
 
-  overflow-x: hidden;
+  overflow: hidden;
 
   font-family: var(--font-family-default);
   font-size: var(--sr16);
