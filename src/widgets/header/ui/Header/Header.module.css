@@ -1,0 +1,13 @@
+.header {
+  height: var(--size-height-header);
+  background-color: var(--color-primary-darkest);
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+
+  margin: 0 auto;
+}

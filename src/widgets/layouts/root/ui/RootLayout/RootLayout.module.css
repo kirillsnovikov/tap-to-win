@@ -1,4 +1,8 @@
 .root {
-  height: 100vh;
+  height: calc(100vh - var(--size-height-header));
   margin: 0 auto;
+
+  background-image: url('/images/bg-lines.png');
+  background-position: bottom center;
+  background-size: auto;
 }

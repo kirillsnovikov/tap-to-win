@@ -108,33 +108,7 @@
     padding: var(--size-padding-button-basic);
     background-color: transparent;
 
-    &.primary {
-      --color-bg-button-basic: var(--color-bg-button-primary);
-      --color-button-basic-hover: var(--color-button-primary-hover);
-      --color-button-basic-active: var(--color-button-primary-active);
-
-      color: var(--color-button-primary-default);
-    }
-
-    &.secondary {
-      --color-bg-button-basic: var(--color-bg-button-secondary);
-      --color-button-basic-hover: var(--color-button-secondary-hover);
-      --color-button-basic-active: var(--color-button-secondary-active);
-
-      color: var(--color-button-secondary-default);
-    }
-
-    &:hover {
-      color: var(--color-button-basic-hover);
-      background-color: var(--color-bg-button-basic);
-    }
-
-    &.active {
-      color: var(--color-button-basic-active);
-      background-color: var(--color-bg-button-basic);
-    }
-
-    &.disabled {
+    &:disabled {
       color: var(--color-text-button-disabled);
       background-color: transparent;
     }

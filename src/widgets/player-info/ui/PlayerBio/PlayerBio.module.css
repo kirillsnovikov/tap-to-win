@@ -1,4 +1,4 @@
 .bio {
   flex: 1;
-  padding: var(--s8) var(--s12);
+  padding-block: var(--s8);
 }

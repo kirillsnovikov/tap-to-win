@@ -7,6 +7,6 @@
 .nav {
   position: absolute;
   right: var(--s0);
-  bottom: var(--s20);
+  bottom: var(--s32);
   left: var(--s0);
 }

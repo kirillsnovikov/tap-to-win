@@ -1,4 +1,5 @@
 import Container from '@src/shared/ui/Container';
+import { Header } from '@src/widgets/header';
 
 import styles from './RootLayout.module.css';
 
@@ -7,7 +8,10 @@ interface Props {
 }
 
 export const RootLayout: React.FC<Props> = ({ children }) => (
-  <Container as="main" className={styles.root}>
-    {children}
-  </Container>
+  <>
+    <Header />
+    <Container as="main" className={styles.root}>
+      {children}
+    </Container>
+  </>
 );

@@ -1,5 +1,6 @@
 import { Flex } from '@src/shared/ui/Flex';
 import { withSession } from '@src/entities/session/ui/withSession';
+import { ProgressBar } from '@src/shared/ui/ProgressBar';
 
 import { PlayerBio } from '../PlayerBio';
 import { TopWin } from '../TopWin';
@@ -18,6 +19,7 @@ const PlayerInfoComponent = ({ player }: WithSessionBaseProps) => {
         <TopWin topWin={topWin} />
       </Flex>
       <TotalCoins coins={coins} />
+      <ProgressBar value={78} />
     </Flex>
   );
 };
