@@ -14,6 +14,7 @@
   --outline-offset-focus-visible: var(--s2);
   --transition-duration: 0.3s;
   --font-family-default: 'SF UI Display', sans-serif;
+  --size-height-header: var(--s48);
 
   /* border radius */
   --border-radius-s: var(--s8);
@@ -28,7 +29,7 @@ html {
 body {
   scrollbar-gutter: stable;
 
-  overflow-x: hidden;
+  overflow: hidden;
 
   font-family: var(--font-family-default);
   font-size: var(--sr16);

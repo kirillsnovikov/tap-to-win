@@ -17,12 +17,14 @@ interface State {
   attemptsLeft: number;
   spinCost: number;
   combination: CombinationTuple;
+  isWin: boolean;
 }
 
 interface Actions {
   decreaseAttemptsLeft: () => void;
   increaseAttemptsTotal: () => void;
   setCombination: (combination: CombinationTuple) => void;
+  setIsWin: (isWin: boolean) => void;
 }
 
 export const useSlotMachineStore = create<State & Actions>((set) => ({
@@ -31,6 +33,7 @@ export const useSlotMachineStore = create<State & Actions>((set) => ({
   attemptsTotal: 0,
   spinCost: 0,
   attemptsLimit,
+  isWin: false,
   decreaseAttemptsLeft: () => {
     set((state) => ({
       attemptsLeft: state.attemptsLeft - 1,
@@ -46,6 +49,11 @@ export const useSlotMachineStore = create<State & Actions>((set) => ({
       combination,
     });
   },
+  setIsWin: (isWin) => {
+    set({
+      isWin,
+    });
+  },
 }));
 
 export const getCombination = () => useSlotMachineStore.getState().combination;
@@ -56,3 +64,5 @@ export const useGetAttempts = (): [attemptsLeft: number, attemptsLimit: number] 
 export const useGetAttemptsTotal = () => useStore(useSlotMachineStore, (state) => state.attemptsTotal);
 
 export const useGetSpinCost = () => useStore(useSlotMachineStore, (state) => state.spinCost);
+
+export const useGetIsWin = () => useStore(useSlotMachineStore, (state) => state.isWin);

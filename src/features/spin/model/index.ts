@@ -11,7 +11,7 @@ import type { CombinationTuple } from '@src/entities/slot-machine/model';
 
 export const useSpin = () => {
   const isSpinned = useRef(false);
-  const { setCombination, decreaseAttemptsLeft, increaseAttemptsTotal } = useSlotMachineStore();
+  const { setCombination, decreaseAttemptsLeft, increaseAttemptsTotal, setIsWin } = useSlotMachineStore();
   const { addCoins } = useSessionStore();
 
   const spin = (combination: CombinationTuple) => {
@@ -19,6 +19,7 @@ export const useSpin = () => {
       return;
     }
     isSpinned.current = true;
+    setIsWin(false);
     setCombination(combination);
     const win = getWinValue(combination);
     increaseAttemptsTotal();
@@ -27,6 +28,7 @@ export const useSpin = () => {
     setTimeout(() => {
       if (isNonNullable(win)) {
         addCoins(win);
+        setIsWin(true);
       }
       isSpinned.current = false;
     }, spinDelay);

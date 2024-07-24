@@ -1,0 +1,13 @@
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-block: var(--s12);
+}
+
+.nav {
+  position: absolute;
+  right: var(--s0);
+  bottom: var(--s32);
+  left: var(--s0);
+}

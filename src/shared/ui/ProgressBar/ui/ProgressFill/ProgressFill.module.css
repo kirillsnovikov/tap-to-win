@@ -1,0 +1,17 @@
+.fill {
+  display: block;
+
+  height: 100%;
+
+  background-image: radial-gradient(
+    51.22% 20384.82% at 50.66% -25%,
+    #00c3eb 0%,
+    #f63d1f 33.77%,
+    #8f2cdc 61.5%,
+    #7c6bf0 79.5%,
+    #004ba6 100%
+  );
+  border-radius: var(--s4);
+
+  transition: width var(--transition-duration) ease-in-out;
+}

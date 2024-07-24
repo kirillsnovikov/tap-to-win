@@ -17,8 +17,3 @@ export interface BaseButtonProps {
 }
 
 export type ButtonProps<T extends React.ElementType = 'button'> = HeadlessButtonProps<T> & BaseButtonProps;
-
-// export type ButtonComponent = <T extends React.ElementType = 'button'>(
-//   props: ButtonProps<T>,
-//   ref: PolymorphicRef<T>,
-// ) => React.ReactNode;

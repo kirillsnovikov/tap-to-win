@@ -6,7 +6,7 @@
   --size-button-l: var(--sr60);
   --size-padding-button-fill: var(--s0) var(--s40);
   --size-padding-button-outline: var(--s0) calc(var(--s40) - 1px);
-  --size-padding-button-basic: var(--s0) var(--s24);
+  --size-padding-button-basic: var(--s0) var(--s4);
 
   /* shared colors */
   --color-bg-button-primary: var(--color-primary-lightest);
@@ -108,33 +108,7 @@
     padding: var(--size-padding-button-basic);
     background-color: transparent;
 
-    &.primary {
-      --color-bg-button-basic: var(--color-bg-button-primary);
-      --color-button-basic-hover: var(--color-button-primary-hover);
-      --color-button-basic-active: var(--color-button-primary-active);
-
-      color: var(--color-button-primary-default);
-    }
-
-    &.secondary {
-      --color-bg-button-basic: var(--color-bg-button-secondary);
-      --color-button-basic-hover: var(--color-button-secondary-hover);
-      --color-button-basic-active: var(--color-button-secondary-active);
-
-      color: var(--color-button-secondary-default);
-    }
-
-    &:hover {
-      color: var(--color-button-basic-hover);
-      background-color: var(--color-bg-button-basic);
-    }
-
-    &.active {
-      color: var(--color-button-basic-active);
-      background-color: var(--color-bg-button-basic);
-    }
-
-    &.disabled {
+    &:disabled {
       color: var(--color-text-button-disabled);
       background-color: transparent;
     }
