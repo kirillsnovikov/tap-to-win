@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh - var(--size-height-header));
+  height: calc(100dvh - var(--size-height-header));
   margin: 0 auto;
 
   background-image: url('/images/bg-lines.png');
